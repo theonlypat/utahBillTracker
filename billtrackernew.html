@@ -1,0 +1,104 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="stylenew.css" rel="stylesheet">
+		<!--<link href="http://dylntrnr.github.com/utahBillTracker/css/bootstrap.min.css" rel="stylesheet">-->
+		<script type="text/javascript" src="http://dylntrnr.github.com/utahBillTracker/js/jquery.js"></script>
+		<script type="text/javascript" src="http://dylntrnr.github.com/utahBillTracker/js/script.js"></script>
+		<script type="text/javascript" src="http://dylntrnr.github.com/utahBillTracker/js/jquery-hashchange-plugin.min.js"></script>
+
+		
+	</head>
+	
+	<body>
+		
+		<div class="container">
+			
+			<div class="masthead">
+				<div class="row">
+					<div class="span8" id="mainpagetitle">
+						<h1>Utah State Legislative Bill Search</h1>
+						<div class="row">
+							<div class="span7 offset1 muted">
+								<h3>A Project of ABU</h3>
+							</div>
+						</div>
+					</div>
+					<div class="span4 hidden-phone">
+								<img src="https://secure3.convio.net/pn/images/content/pagebuilder/Alliance_horizontal-EMAIL-trans.png" alt="" id="abumainlogo" />
+					</div>
+					<div class="span12 visible-phone center" id="abulogo">
+								<img src="https://secure3.convio.net/pn/images/content/pagebuilder/Alliance_horizontal-EMAIL-trans.png" alt="" id="abumainlogo" />
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="span10 offset1">
+					<p id="description">Please use the search function below to find current (and past) bills in the Utah State Legislature. If you know the "Bill ID" of a specific bill (i.e. HB 363), you can use the <em>Search by Bill ID</em> function and enter the Bill ID as well as the Session year to find detailed information pertaining to status of that bill. Otherwise, you can use the <em>Keyword Search</em> and enter keywords to discover more about the bills being proposed at the legislature. Additionally, for a full list of bills (from 2013-2011), leave the search field blank and hit the <em>Search</em> button.</p>
+				</div>
+			</div>
+			<div id="searchBox" class="hide">
+			<div class="row">
+				<div class="span3 offset3">
+					<label class="radio" id="radio1">
+						<input type="radio" name="optionsRadios" id="optionsRadio1" value="title" checked><strong>Keyword Search</strong><span class="help-block muted">Provides Basic Information</span>
+					</label>
+				</div>
+				<div class="span3">
+					<label class="radio" id="radio2">
+						<input type="radio" name="optionsRadios" id="optionsRadio2" value="bill_id"><strong>Search by Bill ID</strong><span class="help-block muted">Provides Detailed Information</span>
+					</label>
+				</div>
+			</div>
+			<div class="row" id="sessionrow">
+				<div class="span8 offset4">
+					<div class="hide" id="session"><input type="text" id="sessionInput focusedInput" class="input-small" placeholder="Session"><span class="help-inline">Enter the session year</span></div>
+				</div>
+			</div>
+			<div class="row" id="searchfield">
+				<div class="span12">
+					<form class="form-search">
+						<div class="input-append">
+							<input type="text" class="input-medium search-query" data-provide="typeahead" id="term" placeholder="Search for bills..." autocomplete="off">
+							<button type="submit" id="search" class="btn"><i class="icon-search"></i> Search</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			</div>
+				
+				
+			
+				<div id="counter">
+					<h3></h3>
+				</div>
+			
+			<div class="container">
+				
+				<div id="testing"></div>
+				
+				<table id="table" class="table">
+				
+				</table>
+				
+				<h3 id="loading" class="hide">loading...</h3>
+			
+			<footer>
+				<p>Created by Better UTAH<br />&copy 2013, All Rights Reserved<br /><a href="http://betterutah.org">www.betterutah.org</a></p>
+			</footer>
+			
+			</div>
+			
+			
+		</div>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://dylntrnr.github.com/utahBillTracker/js/bootstrap.min.js"></script>
+    <script src="http://dylntrnr.github.com/utahBillTracker/js/bootstrap-typeahead.js"></script>
+	</body>
+</html>
