@@ -43,19 +43,19 @@
 				<div class="row">
 					<div class="span5 offset1">
 						<label class="radio" id="radio1">
-							<input type="radio" name="optionsRadios" id="optionsRadio1" value="title" checked><strong>Keyword Search</strong><span class="help-inline muted">Provides Basic Information</span>
+							<input type="radio" name="optionsRadios" id="optionsRadio1" value="title" checked title="Use this search method to serch for a bill or list of bills using keywords found anywhere in the bill text. This will retrieve basic information and let you access more detailed information including the full text of the bill."><strong>Keyword Search</strong><span class="help-inline muted">Provides Basic Information</span>
 						</label>
 					</div>
 					<div class="span6">
 						<label class="radio" id="radio2">
-							<input type="radio" name="optionsRadios" id="optionsRadio2" value="bill_id"><strong>Search by Bill ID</strong><span class="help-inline muted">Provides Detailed Information</span>
+							<input type="radio" name="optionsRadios" id="optionsRadio2" value="bill_id" title="Use this option to search for a specific bill via the Bill ID. THis will display detailed information about where the bill is in the process and allow you to access the full text of the bill and any associated documents."><strong>Search by Bill ID</strong><span class="help-inline muted">Provides Detailed Information</span>
 						</label>
 					</div>
 				</div>
 				<div class="row">
 					<div class="span12 textCenter">
 
-						<div class="hide" id="session"><input type="text" class="input-small" id="sessionInput" placeholder="Session"><span class="help-inline">Enter the session year</span></div>
+						<div class="hide" id="session"><input type="text" class="input-small" id="sessionInput" placeholder="Session" title="Include the Session Year for the bill you are searching for, such as '2010' or 2013."><span class="help-inline">Enter the session year</span></div>
 
 					</div>
 				</div>
@@ -63,8 +63,8 @@
 					<div class="span12 textCenter">
 
 							<div class="input-append">
-								<input type="text" class="input-medium" data-provide="typeahead" id="term" placeholder="Search for bills..." autocomplete="off">
-								<button type="submit" id="search" class="btn"><i class="icon-search"></i> Search</button>
+								<input type="text" class="input-medium" data-provide="typeahead" id="term" placeholder="Search for bills..." autocomplete="off" title="Enter either a keyword (i.e. violence) or a Bill ID depending on the search you are running. As you type, the bill search will display options based on Bill Title. If none of these are relevant or you want to search more generally, simply hit the 'Escape' button to hide the suggestions.">
+								<button type="submit" id="search" class="btn" title="Results will display below."><i class="icon-search"></i> Search</button>
 							</div>
 
 					</div>
@@ -74,7 +74,7 @@
 
 
 				<div id="counter">
-					<h3></h3>
+					<h3 title="How many bills were found matching your query."></h3>
 				</div>
 
 			<div class="container">
@@ -88,7 +88,7 @@
 				<h3 id="loading" class="hide">loading...</h3>
 
 			<footer>
-				<p>Created by Better UTAH<br />&copy 2013, All Rights Reserved<br /><a href="http://betterutah.org">www.betterutah.org</a><br /><a href="mailto:info@betterutah.org"><i class="icon-comment"></i> Feedback</a></p>
+				<p>Created by Better UTAH<br />&copy 2013, All Rights Reserved<br /><a href="http://betterutah.org">www.betterutah.org</a><br /><a href="mailto:info@betterutah.org" title="Let us know if something doesn't work or you need assistance. Also, let us know what you think of our Bill Search and what we might be able to imporve."><i class="icon-comment"></i> Feedback</a></p>
 			</footer>
 
 			</div>
